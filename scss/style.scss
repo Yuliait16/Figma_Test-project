@@ -1,0 +1,291 @@
+@import "nullstyle.scss";
+@import "Museo Sans.scss";
+
+
+body {
+  min-width: 1200px;
+  font-family: Museo Sans;
+}
+
+.wraper {
+	display: flex;
+ 	flex-direction: column;
+ 	max-width: 1920px;
+  	margin: 0 auto;
+}
+
+.header {
+	flex: 0 0 150px;
+	padding: 17px 0 0 0;
+
+	&__container {
+		//display: flex;
+  		//justify-content: space-between;
+  		//flex-direction: column;
+	}
+
+	&__top {
+		//flex: 1 1 50%;
+  		display: flex;
+  		flex-direction: row;
+  		//justify-content: space-between;    
+  		padding: 0 0 10px 0;
+	}
+
+	&__container-left {
+		flex: 1 1 50%;
+  		display: flex;
+  		align-items: center;
+  		margin: 0px 0px 17px 0px;
+	}
+
+	&__image {
+		flex: 0 0 70px;
+	}
+
+	&__image img{
+		width: 100%;
+  		height: 100%;
+	}
+
+	&__logo {
+		flex: 1 1 auto;
+  		padding-left: 16px;
+	}
+	&__container-right {
+		flex: 1 1 50%;
+  		display: flex;
+  		align-items: center;
+  		justify-content: flex-end;
+	}
+
+	&__form {
+		position: relative;
+	}
+
+	&__search {
+		height: 50px;
+  		width: 560px;
+  		//width: 100%;
+ 		background-color: #F3F3F3;
+ 		padding: 15px 60px 15px 15px;
+ 		font-size: 16px;
+  		line-height: 19px;
+ 		color: #000000;
+	}
+
+	&__button {
+		position: absolute;
+  		opacity: 0.75;
+  		top: 13px;
+  		right: 12px;
+	}
+
+	&__bottom {
+		flex: 0 0 50%;
+  		border-top: 1px solid #000000; 
+	}
+
+	&__list {
+		display: grid;
+  		grid-auto-flow: column;
+  		justify-content: center;
+	}
+
+	&__link {
+		font-size: 18px;
+  		line-height: 22px;
+  		transition: 0.3s;
+	}
+
+	&__link:hover {
+		background-color: #E69A37;
+  		cursor: pointer;
+  		transition: 0.3s;
+	}
+
+	&__link a {
+		display: inline-block;
+  		padding: 20px 27px; 
+  		color: #000000;
+  		transition: 0.3s;
+	}
+
+	&__link a:first-letter {
+		text-transform: uppercase;
+	}
+
+	&__link a:hover {
+		color: #F3F3F3;
+	}
+
+	&__link-active {
+		font-size: 18px;
+  		line-height: 22px;
+  		transition: 0.3s;
+  		background-color: #323232;
+	}
+
+	&__link-active:hover {
+		cursor: pointer;
+  		transition: 0.6s;
+  		background-color: #323232;
+	}
+
+	&__link-active a {
+		display: inline-block;
+  		padding: 20px 27px; 
+  		color: #F3F3F3;
+  		transition: 0.4s;
+	}
+}
+
+.content {
+	//min-width: 1200px;
+  	width: 1200px;
+  	padding: 0 15px;
+  	margin: 0 auto;
+}
+
+.logo {
+	&__title {
+		font-size: 20px;
+  		font-weight: 900;
+  		line-height: 25px;
+  		text-transform: capitalize;
+	}
+
+	&__text {
+		font-weight: 500;
+	}
+}
+
+
+.main {
+	flex: 1 1 auto;
+  	background: url(../img/Bg.jpg) center / cover no-repeat;
+
+	&__subtitle {
+		background-color:  #E69A37;
+	   margin: 130px 0 30px 0;
+	   padding: 11px 20px;
+	   display: inline-block;
+	   font-weight: bold;
+	   font-size: 13px;
+	   line-height: 16px;
+	   letter-spacing: 0.2em;
+	   text-transform: uppercase;
+	   color: #FFFFFF;
+	}
+
+	&__title {
+		font-weight: bold;
+	   font-size: 60px;
+	   line-height: 68px;
+	   color: #FFFFFF;
+	   max-width: 530px;
+	   margin: 0 0 20px 0;
+	}
+
+	&__text {
+		font-weight: normal;
+	   font-size: 22px;
+	   line-height: 28px;
+	   color: #FFFFFF;
+	   max-width: 600px;
+	   margin: 0 0 80px 0;
+	}
+
+	&__container {
+		 display: grid;
+  		 grid-auto-flow: column;
+ 		 justify-content: center;
+ 		 margin: 0 0 40px 0;
+	}
+
+	&__link {
+		display: inline-block;
+	   width: 12px;
+	   height: 12px;
+	   margin: 0 7px;
+	   border: 1px solid white;
+	   transition: 0.3s;
+	}
+
+	&__link:hover {
+		cursor: pointer;
+  		background-color: white;
+  		transition: 0.3s;
+	}
+
+
+	&__link:active {
+		background: #E69A37;
+ 		border: #E69A37;
+	}
+
+	&__link-active {
+		display: inline-block;
+	   width: 12px;
+	   height: 12px;
+	   margin: 0 7px;
+	   border: 1px solid #E69A37;
+	   background: #E69A37;
+	}
+}
+
+.footer {
+	flex: 0 0 188px;
+
+	&__container {
+		display: grid;
+ 		grid-auto-flow: column;
+ 		justify-content: center;
+ 		border-bottom: 1px solid #000000;
+	}
+
+	&__item {
+		display: inline-block;
+	  	padding: 35px 24px;
+	  	width: 234px;
+	  	transition: 0.3s;
+	}
+
+	&__item:hover {
+		cursor: pointer;
+	 	background-color: #F3F3F3;
+	  	transition: 0.3s;
+	  	text-decoration: underline;
+	  	text-decoration-color: #000;
+	}
+}
+
+.item {
+	&__container {
+		display: flex;
+  		flex-direction: row;
+	}
+
+	&__logo {
+		width: 50px;
+  		height: 50px;
+	}
+
+	&__logo img {
+		width: 100%;
+  		height: 100%;
+	}
+
+	&__text {
+		align-self: center;
+	  	font-size: 14px;
+	  	line-height: 20px;
+	  	color: #323232;
+	  	transition: 0.3s;
+	  	padding: 0 0 0 10px;
+	}
+
+	&__text:first-letter {
+		text-transform: capitalize;
+	}
+}
